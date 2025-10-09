@@ -1,0 +1,112 @@
+.hero {
+  background-image: url("/bg-hero.jpg");
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 6rem 0 6rem;
+  position: relative;
+
+  &__link {
+    display: flex;
+    gap: 0.5rem;
+    color: white;
+    font-family: Verdana, sans-serif;
+  }
+
+  &__content {
+    color: white;
+    font-family: Verdana, sans-serif;
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    & h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__card {
+    background-image: url('/hero-card-image.svg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 2px 2px #00000029;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 2rem;
+    max-width: 550px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      &-btn {
+        color: #00c83c;
+        text-decoration: underline;
+      }
+
+      &-title {
+        font-weight: bold;
+        & p {
+          font-size: 18px;
+        }
+        & span {
+          font-size: 8px;
+        }
+      }
+    }
+
+    &-body { 
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-bottom: 4rem;
+
+      &-item {
+
+        &-1 {
+          background-color: #A5D7E1;
+        }
+
+        &-2 {
+          background-color: #FECD72;
+        }
+
+        &-3 {
+          background-color: #95DBB7;
+        }
+
+        &-paragraph {
+          display: flex;
+          gap: 2px;
+        }
+         
+        & p {
+        font-family: Verdana, sans-serif;
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+        }
+
+        & span {
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          border-radius: 4px;
+          padding: 4px;
+        }
+      }
+    }
+
+    &-footer {
+      display: flex;
+       gap: 8px;
+       color: #00C83C;
+       font-weight: bold;
+       text-decoration: underline;
+       margin-bottom: 2rem;
+    }
+  }
+}

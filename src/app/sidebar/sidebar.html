@@ -1,1 +1,26 @@
-<p>sidebar works!</p>
+<aside class="sidebar" [class.expanded]="isExpanded()">
+  <!-- Logo / Home Icon -->
+  <div class="sidebar-header" (click)="toggleSidebar()">
+    <div class="home-icon">
+      <span class="icon">🏠</span>
+    </div>
+    @if (isExpanded()) {
+    <span class="sidebar-title">skandia</span>
+    }
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav class="sidebar-nav">
+    @if(isExpanded()) { @for (item of menuItems; track item) {
+    <button
+      class="nav-item"
+      [class.active]="item.active"
+      (click)="selectMenuItem($index)"
+      [title]="item.label"
+    >
+      <img [src]="item.icon" class="nav-icon" alt="item.label" />
+      <span class="nav-label">{{ item.label }}</span>
+    </button>
+    }}
+  </nav>
+</aside>
