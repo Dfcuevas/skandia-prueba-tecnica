@@ -1,0 +1,31 @@
+<section class="main-content">
+  <h2 class="main-content__title">
+    ¡Vamos por esos
+    <span>$6.000.000</span>
+    para
+    <span>Conocer mi sobrino!</span>
+  </h2>
+  <p class="main-content__text">
+    ¡A través de tus productos y nuestros rendimientos podremos lograrlo!
+  </p>
+  <p class="main-content__text main-content__text--bold">
+    Asocia tus productos o adquiere uno nuevo.
+    <img src="/faq-icon.svg" alt="signo de pregunta como icono" />
+  </p>
+
+  <!-- Carousel de tarjetas -->
+  <swiper-container
+    slides-per-view="1"
+    space-between="20"
+    navigation="true"
+    pagination="true"
+    pagination-clickable="true"
+    breakpoints='{"640": {"slidesPerView": 2}, "1024": {"slidesPerView": 3}}'
+  >
+    @for (card of datos; track card.numberProduct) {
+    <swiper-slide>
+      <app-card [card]="card"></app-card>
+    </swiper-slide>
+    }
+  </swiper-container>
+</section>

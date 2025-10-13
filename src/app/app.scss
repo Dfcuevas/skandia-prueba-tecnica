@@ -17,9 +17,9 @@
 
 .app-sidebar {
   grid-area: 2 / 1 / 6 / 2;
+  z-index: 2;
 }
 
 .app-main {
   grid-area: 2 / 2 / 6 / 6;
-  z-index: 1;
 }

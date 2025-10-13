@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   padding: 2rem 6rem 0 6rem;
   position: relative;
+  margin-bottom: 13rem;
 
   &__link {
     display: flex;
@@ -64,7 +65,7 @@
       display: flex;
       justify-content: space-between;
       text-align: center;
-      margin-bottom: 4rem;
+      margin-bottom: 2.5rem;
 
       &-item {
 
@@ -106,7 +107,7 @@
        color: #00C83C;
        font-weight: bold;
        text-decoration: underline;
-       margin-bottom: 2rem;
+       margin-bottom: 1rem;
     }
   }
 }
