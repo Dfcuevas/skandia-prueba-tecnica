@@ -15,12 +15,10 @@
 
   <!-- Carousel de tarjetas -->
   <swiper-container
-    slides-per-view="1"
-    space-between="20"
+    slides-per-view="auto"
     navigation="true"
-    pagination="true"
-    pagination-clickable="true"
-    breakpoints='{"640": {"slidesPerView": 2}, "1024": {"slidesPerView": 3}}'
+    [breakpoints]='{"648": {"slidesPerView": 1}, "720": {"slidesPerView": 3}, "1024": {"slidesPerView": 4}}'
+    class="custom-swiper"
   >
     @for (card of datos; track card.numberProduct) {
     <swiper-slide>

@@ -2,7 +2,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { ApiService } from "../services/api-service";
 import { Card } from "../models/card";
 import { CardComponent } from "../card/card";
-import { register } from "swiper/element";
+import { register } from "swiper/element/bundle";
 
 register();
 
@@ -21,6 +21,7 @@ export class Carousel {
   ngOnInit() {
     this.cargarDatos();
   }
+
   cargarDatos() {
     this.apiService.obtenerDatos().subscribe({
       next: (respuesta) => {

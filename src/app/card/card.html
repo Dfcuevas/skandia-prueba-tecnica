@@ -1,6 +1,13 @@
 <div class="card">
-  <h3 class="card__name">{{ card.nameProduct }}</h3>
-  <p class="card__number">{{ card.numberProduct }}</p>
-  <p class="card__balance">{{ card.balanceProduct }}</p>
-  <p class="card__detail">{{ card.detaildProduct }}</p>
+  <div class="card__name-product">
+    <h3>{{ card.nameProduct }}</h3>
+    <span>#{{ card.numberProduct }}</span>
+  </div>
+  <div class="card__balance">
+    <p>Ya cuentas con:</p>
+    <span>{{ card.balanceProduct | currency:'USD':'symbol':'1.0-0' }}</span>
+  </div>
+  <div class="card__detail-product">
+    <p>{{ card.detaildProduct}}</p>
+  </div>
 </div>
