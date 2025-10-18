@@ -1,0 +1,13 @@
+.footer {
+  padding: 0rem 10rem 6rem;
+  font-family: Verdana, sans-serif;
+
+  &__logo {
+    margin-bottom: 2rem;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
