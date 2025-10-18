@@ -1,6 +1,7 @@
 .footer {
-  padding: 0rem 10rem 6rem;
+  padding: 6rem 10rem 6rem;
   font-family: Verdana, sans-serif;
+  background-color: white;
 
   &__logo {
     margin-bottom: 2rem;
@@ -9,5 +10,19 @@
   &__section {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    &-social {
+      display: flex;
+      align-items: flex-end;
+      gap: 1rem;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .footer-section-social {
+    align-items: flex-start;
   }
 }
